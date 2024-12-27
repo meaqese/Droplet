@@ -13,6 +13,8 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
+            Color.black.ignoresSafeArea()
+            
             Canvas { context, size in
                 let centerPoint = CGPoint(x: size.width / 2, y: size.height / 2)
                 
